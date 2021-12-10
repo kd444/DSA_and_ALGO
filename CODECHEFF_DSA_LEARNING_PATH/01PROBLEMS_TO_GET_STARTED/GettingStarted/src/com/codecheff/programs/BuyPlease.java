@@ -1,0 +1,32 @@
+package com.codecheff.programs;
+
+import java.util.Scanner;
+
+public class BuyPlease {
+
+	public static void main(String[] args) {
+		// TO DO Auto-generated method stub
+		
+		Scanner input = new Scanner(System.in);
+		int[] nums = new int[4];
+		for(int i=0;i < nums.length; i++) {
+			if(input.hasNextInt()) {
+				nums[i] = input.nextInt();	
+			}
+		}
+		System.out.println((nums[0]*nums[2])+(nums[1]*nums[3]));
+		
+		
+//	    System.out.println("enter number of pens");
+//	    int a = input.nextInt();
+//	    System.out.println("enter number of pencils");
+//	    int b = input.nextInt();
+//	    System.out.println("enter cost per unit for pens");
+//	    int x = input.nextInt();
+//	    System.out.println("enter const per unit for pencils");
+//	    int y = input.nextInt();
+//	    int total= ((a*x)+(b*y));
+//	    System.out.println(total);
+	}
+
+}

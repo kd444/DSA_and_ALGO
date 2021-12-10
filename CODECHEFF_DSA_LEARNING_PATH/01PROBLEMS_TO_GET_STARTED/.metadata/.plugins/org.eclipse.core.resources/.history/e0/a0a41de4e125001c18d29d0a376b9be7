@@ -1,0 +1,38 @@
+package com.codecheff.programs;
+
+import java.util.Scanner;
+
+   public class FactorsFind {
+	// TO DO Auto-generated method stub
+	
+	   public static void main(String[] args) {
+			Scanner input= new Scanner(System.in);
+			int n=input.nextInt();
+			int count= 0;
+			int arr[]=new int[n];
+			for(int i=1;i<=n;i++){
+			if(n%i==0){
+			arr[count]=i;
+			count++;
+			}
+			}
+			System.out.println(count);
+			for(int i=0;i<count;i++){
+			System.out.print(arr[i]+" ");
+			}
+			}
+			
+			
+			
+//		    System.out.println("enter number of pens");
+//		    int a = input.nextInt();
+//		    System.out.println("enter number of pencils");
+//		    int b = input.nextInt();
+//		    System.out.println("enter cost per unit for pens");
+//		    int x = input.nextInt();
+//		    System.out.println("enter const per unit for pencils");
+//		    int y = input.nextInt();
+//		    int total= ((a*x)+(b*y));
+//		    System.out.println(total);
+		}
+}

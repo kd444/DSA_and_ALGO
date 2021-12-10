@@ -1,0 +1,21 @@
+package com.codecheff.programs;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class SecondLargestt {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		List<Integer> l1 = new ArrayList<Integer>();
+	    int i;
+	    int max = l1.get(0);
+	    for (i=1;i<l1.size();i++) {
+	    	if(l1.get(i) >max)
+	    		max=l1.get(i);
+	     
+	     System.out.println(max);
+	}
+
+	}
+}
