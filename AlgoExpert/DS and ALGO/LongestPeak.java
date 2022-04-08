@@ -1,4 +1,3 @@
-package Arrays.LongestPeak;
 
 public class LongestPeak {
     public int getLongestPeak(int[] arr) {
