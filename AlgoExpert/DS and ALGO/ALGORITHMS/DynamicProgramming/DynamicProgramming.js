@@ -4,7 +4,7 @@ function addTo80(n) {
 }
 
 addTo80(5);
-
+///global scoped
 let cache = {};
 function memoizeAddTo80(n) {
     if (n in cache) {
