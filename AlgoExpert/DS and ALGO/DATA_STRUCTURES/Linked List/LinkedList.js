@@ -1,4 +1,5 @@
 // Create the below linked list:
+// 10-->15-->16
 // myLinkedList = {
 //   head: {
 //     value: 10
