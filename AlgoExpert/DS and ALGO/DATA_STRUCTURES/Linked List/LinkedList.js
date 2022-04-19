@@ -19,6 +19,13 @@
 //     length:1
 // }
 
+// insert will insert at any index given
+class Node {
+    constructor(value) {
+        this.value = value;
+        this.next = null;
+    }
+}
 class LinkedList {
     constructor(value) {
         this.head = {
@@ -31,11 +38,7 @@ class LinkedList {
         return this;
     }
     append(value) {
-        //Code here
-        const newNode = {
-            value: value,
-            next: null,
-        };
+        const newNode = new Node(value);
 
         // pointing to the new node which has next  null already set up
 
@@ -58,8 +61,29 @@ class LinkedList {
         this.length++;
         return this;
     }
+    printList() {
+        const array = [];
+        let currentNode = this.head;
+        while (currentNode !== null) {
+            array.push(currentNode.value);
+            currentNode = currentNode.next;
+        }
+        return array;
+    }
+    insert(index, value) {
+        // if given index is greater than it will just attach to the end
+        if (index >= this.length) {
+            return this.append(value);
+        }
+        const newNode = {
+            value: value,
+            next: null,
+        };
+    }
 }
 
 let myLinkedList = new LinkedList(10);
 myLinkedList.append(5);
 myLinkedList.append(16);
+myLinkedList.insert(200, 99);
+myLinkedList.printList();
