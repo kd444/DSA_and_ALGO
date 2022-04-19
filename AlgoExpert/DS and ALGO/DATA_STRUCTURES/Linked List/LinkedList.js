@@ -43,6 +43,20 @@ class LinkedList {
 
         // this.tail has now a new last element.so we chqnge it to  new elenent
         this.tail = newNode;
+        this.length++;
+        return this;
+    }
+    prepend(value) {
+        //Code here
+        const newNode = {
+            value: value,
+            next: null,
+        };
+
+        newNode.tail = this.head;
+        this.head = newNode;
+        this.length++;
+        return this;
     }
 }
 
