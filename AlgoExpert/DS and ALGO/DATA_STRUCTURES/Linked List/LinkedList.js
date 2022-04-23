@@ -79,6 +79,17 @@ class LinkedList {
             value: value,
             next: null,
         };
+        const leader = this.travelToIndex(index-1)
+    }
+
+    travelToIndex(index){
+        let counter =0
+        let currentNode = this.head;
+        while(counter !== index){
+            currentNode = currentNode.next;
+            counter++
+        }
+        return currentNode;
     }
 }
 
